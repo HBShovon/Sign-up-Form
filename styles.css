@@ -8,6 +8,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  display: flex;
+  background-color: #fafafa;
+}
 
 .left {
   position: relative;
@@ -42,7 +46,116 @@
   height: auto;
 }
 
-h1 {
+.left h1 {
   font-family: norse-bold;
   font-size: 60px;
+}
+
+.right {
+  width: 65%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: large;
+  font-weight: 600;
+}
+
+.intro1 {
+  margin: 100px 250px 20px 30px;
+}
+
+.intro2 {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 150px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  margin-top: 20px;
+  margin-right: 700px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+form {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.form-row {
+  width: 400px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+input {
+  width: 300px;
+  height: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+}
+
+.error-text {
+  margin-top: 5px;
+  width: 300px;
+  font-size: 10px;
+  color: red;
+  display: none;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid rgb(43, 43, 215);
+}
+
+input[type="password"]:invalid {
+  border: 1px solid rgb(208, 36, 36);
+}
+
+input[type="password"]:invalid + .error-text {
+  display: inline;
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+  background-color: #596d48;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 220px;
+  left: -50px;
+}
+
+footer {
+  position: absolute;
+  font-size: 16px;
+  margin-top: 100px;
+  margin-left: 30px;
+  top: 400px;
+}
+
+.login {
+  color: #596d48;
 }

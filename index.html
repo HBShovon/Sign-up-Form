@@ -19,5 +19,67 @@
         <h1>ODIN</h1>
       </div>
     </div>
+    <div class="right">
+      <div class="intro">
+        <p class="intro1">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em>
+          to get started.
+        </p>
+        <p class="intro2">You <em>know</em> you want to.</p>
+      </div>
+      <div class="form">
+        <form action="">
+          <p>Let's do this!</p>
+          <div class="form-row">
+            <label for="fName" class="label">FIRST NAME</label>
+            <input type="text" id="fName" name="fName" />
+          </div>
+          <div class="form-row">
+            <label for="lNAme">LAST NAME</label>
+            <input type="text" id="lName" name="lName" />
+          </div>
+          <div class="form-row">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-row">
+            <label for="tel">PHONE NUMBER</label>
+            <input type="tel" id="tel" name="tel" />
+          </div>
+          <div class="form-row">
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            />
+            <span class="error-text"
+              >Password must contain an uppercase letter, a lower case letter
+              and a number</span
+            >
+          </div>
+          <div class="form-row">
+            <label for="cPasssword">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              id="cPasssword"
+              name="cPassword"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            />
+            <span class="error-text"
+              >Password must contain an uppercase letter, a lower case letter
+              and a number</span
+            >
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+      <footer>
+        Already have an account? <span class="login">Log in</span>
+      </footer>
+    </div>
   </body>
 </html>
